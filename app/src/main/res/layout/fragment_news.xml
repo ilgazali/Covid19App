@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/newsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="News"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <com.hbb20.CountryCodePicker
+
+                android:id="@+id/ccpForNews"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/country_code_drawable"
+                android:padding="5dp"
+
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showFullName="false"
+                app:ccp_showPhoneCode="false"
+                app:ccp_textSize="12sp">
+
+            </com.hbb20.CountryCodePicker>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewOfNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/newsTitle"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:fitsSystemWindows="true"
+            android:padding="2dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
