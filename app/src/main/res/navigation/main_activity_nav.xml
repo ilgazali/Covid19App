@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/covidFragment"
-        android:name="com.example.covid19app.Covid19Fragment"
+        android:name="com.example.covid19.Covid19Fragment"
         android:label="fragment_covid19"
         tools:layout="@layout/fragment_covid19" />
     <fragment
         android:id="@+id/infoFragment"
-        android:name="com.example.covid19app.InfoFragment"
+        android:name="com.example.covid19.InfoFragment"
         android:label="fragment_info"
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.covid19app.NewsFragment"
+        android:name="com.example.covid19.NewsFragment"
         android:label="fragment_news"
         tools:layout="@layout/fragment_news" >
     </fragment>

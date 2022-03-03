@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <group android:id="@+id/menu_top"
+    android:checkableBehavior="single">
+
     <item
         android:id="@+id/covidFragment"
-        android:title="Covid" />
-    <item
-        android:id="@+id/infoFragment"
-        android:title="Info" />
-    <item
-        android:id="@+id/newsFragment"
-        android:title="News" />
+        android:title="Covid-19" />
+    </group>
+
+    <group android:id="@+id/menu_middle"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/infoFragment"
+            android:title="PROTECT YOUR HEALTH" />
+
+    </group>
+
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/newsFragment"
+            android:title="Health News" />
+
+    </group>
+
+
+
 
 </menu>
