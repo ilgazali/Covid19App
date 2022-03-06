@@ -4,15 +4,17 @@
     <group android:id="@+id/menu_top"
     android:checkableBehavior="single">
 
-    <item
-        android:id="@+id/covidFragment"
-        android:title="Covid-19" />
+        <item
+            android:id="@+id/covidFragment"
+            android:icon="@drawable/covid19_2"
+            android:title="Covid-19" />
     </group>
 
     <group android:id="@+id/menu_middle"
         android:checkableBehavior="single">
         <item
             android:id="@+id/infoFragment"
+            android:icon="@drawable/hospital"
             android:title="PROTECT YOUR HEALTH" />
 
     </group>
@@ -21,6 +23,7 @@
         android:checkableBehavior="single">
         <item
             android:id="@+id/newsFragment"
+            android:icon="@drawable/world"
             android:title="Health News" />
 
     </group>
