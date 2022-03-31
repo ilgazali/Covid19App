@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.covid19">
+    package="com.kampot.covid19">
 
     <uses-permission android:name="android.permission.INTERNET">
         true
@@ -13,11 +13,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Covid19App">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-7070673976351304~3066800820"/>
         <activity
-            android:name="com.example.covid19.WebView"
+            android:name="com.kampot.covid19.WebView"
             android:exported="false" />
         <activity
-            android:name="com.example.covid19.MainActivity"
+            android:name="com.kampot.covid19.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

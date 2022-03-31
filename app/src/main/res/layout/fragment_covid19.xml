@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Covid19Fragment"
+    tools:context="com.kampot.covid19.Covid19Fragment"
     android:background="#E1E8ED">
 
     <RelativeLayout
@@ -639,10 +639,25 @@
             android:id="@+id/recycler_view"
             android:layout_marginTop="-5dp"
             android:padding="10dp">
+
+
         </androidx.recyclerview.widget.RecyclerView>
 
 
 
     </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="276dp"
+        android:visibility="visible"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-7070673976351304/1585310149">
+
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
